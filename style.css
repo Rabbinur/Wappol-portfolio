@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Messina Sans";
+    src: url("fonts/messina-sans.woff2") format("woff2"),
+      url("fonts/messina-sans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Nantes";
+    src: url("fonts/font/Nantes-Regular.woff2") format("woff2"),
+      url("fonts/font/Nantes-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: "Messina Sans", sans-serif;
+    /* background-color: #EDEDED; */
+  }
+
+  .background_image {
+    background-image: url("../images/banner.svg");
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .overlay {
+    background-color: #2042b695;
+  }
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    /* background-color: #2042B6; */
+  }
+  #navbar {
+    /* transition:  0.1s ease; Smooth transition for background color */
+  }
+
+  /* slider css */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+   
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px ;
+    padding: 10px;
+    flex:none;
+    overflow: hidden;
+
+}
+.gallery div img{
+    width: 100%;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    /* transform: scale(1.5); */
+    transition-duration: 0.5s;
+   
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.bg{
+    background-image: url("/images/storie/storybg.png");
+    background-position:center;
+background-repeat: no-repeat;
+
+}
